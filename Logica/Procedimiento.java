@@ -5,9 +5,6 @@ public interface Procedimiento {
         
     }
 
-
-   
-
     }
     
 

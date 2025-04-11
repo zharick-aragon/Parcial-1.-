@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.*;
 
 public abstract class Enfermera {
     private String documento; 
@@ -9,7 +10,6 @@ public abstract class Enfermera {
         nombre = this.nombre; 
     }
     public Enfermera(String documento2, String nombre2, int experiencia) {
-        //TODO Auto-generated constructor stub
     }
     public String getDocumento(){
         return documento;
@@ -17,7 +17,14 @@ public abstract class Enfermera {
     public String getNombre(){
         return nombre;
     }
+    public void agregarTurno(Turno nuevoTurno){
+        String fecha = fecha; 
+        nuevoTurno = new Turno(fecha); 
+    }
 
+    public Turno getTurno(String fecha){
+
+    }
 
     public List<String> getProcedimientosHabilitados(){
         return null;}
@@ -28,3 +35,4 @@ public abstract class Enfermera {
     
 
 }
+

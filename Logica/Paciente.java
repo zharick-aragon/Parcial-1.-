@@ -28,7 +28,7 @@ public class Paciente {
     
 
     public void agregarProcedimiento(Procedimiento procedimiento){
-        procedimiento = new Procedimiento; 
+        procedimiento = new Procedimiento(); 
     }
 
 
