@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List; 
 
 public class Paciente {
     public int Verde = 1; 
@@ -9,11 +11,13 @@ public class Paciente {
     private String nombre ; 
     private int NivelTriage;
     public static final String getDescripcion = ""; 
+    private List<Procedimiento> procedimientos = new ArrayList<>();
 
     public Paciente(int NivelTriage, String documento, String nombre){
         NivelTriage = this.NivelTriage; 
         documento = this.documento; 
         nombre = this.nombre; 
+        
     }
     public String getDocumento(){
         return this.documento; 
@@ -28,7 +32,7 @@ public class Paciente {
     
 
     public void agregarProcedimiento(Procedimiento procedimiento){
-        procedimiento = new Procedimiento(); 
+        procedimientos.add(procedimiento); 
     }
 
 

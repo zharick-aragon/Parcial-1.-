@@ -18,13 +18,10 @@ public abstract class Enfermera {
         return nombre;
     }
     public void agregarTurno(Turno nuevoTurno){
-        String fecha = fecha; 
-        nuevoTurno = new Turno(fecha); 
+        nuevoTurno = new Turno(nombre); 
     }
 
-    public Turno getTurno(String fecha){
-
-    }
+    
 
     public List<String> getProcedimientosHabilitados(){
         return null;}
