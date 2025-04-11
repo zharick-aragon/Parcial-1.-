@@ -1,0 +1,39 @@
+import java.util.Collection;
+
+public class Paciente {
+    public int Verde = 1; 
+    public int Amarillo = 2; 
+    public int Naranja = 3; 
+    public int Rojo = 4; 
+    private String documento; 
+    private String nombre ; 
+    private int NivelTriage;
+    public static final String getDescripcion = ""; 
+
+    public Paciente(int NivelTriage, String documento, String nombre){
+        NivelTriage = this.NivelTriage; 
+        documento = this.documento; 
+        nombre = this.nombre; 
+    }
+    public String getDocumento(){
+        return this.documento; 
+    }
+    public String getNombre(){
+        return this.nombre; 
+    }
+    public int getNivelTriage(){
+        return this.NivelTriage; 
+    }
+    
+    
+
+    public void agregarProcedimiento(Procedimiento procedimiento){
+        procedimiento = new Procedimiento; 
+    }
+
+
+
+
+    
+
+}
